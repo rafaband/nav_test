@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Screen1 extends StatelessWidget {
+class Screen2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,11 +11,11 @@ class Screen1 extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text("Screen 1"),
+            Text("Screen 2"),
             RaisedButton(
-              child: Text("Go to Screen 2"),
+              child: Text("Back to Screen 1"),
               onPressed: () {
-                Navigator.pushNamed(context, "screen2");
+                Navigator.pop(context);
               }
             ),
           ],
